@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOT_33_BAKIM_TABLOLARI.       "MESSAGE-ID ..
+
+* INCLUDE LZOT_33_BAKIM_TABLOLARID...        " Local class definition
