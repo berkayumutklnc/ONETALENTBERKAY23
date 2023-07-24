@@ -1,6 +1,12 @@
 *---------------------------------------------------------------------*
 *    view related data declarations
 *---------------------------------------------------------------------*
+*...processing: ZOT_33_T_ADRES..................................*
+DATA:  BEGIN OF STATUS_ZOT_33_T_ADRES                .   "state vector
+         INCLUDE STRUCTURE VIMSTATUS.
+DATA:  END OF STATUS_ZOT_33_T_ADRES                .
+CONTROLS: TCTRL_ZOT_33_T_ADRES
+            TYPE TABLEVIEW USING SCREEN '0009'.
 *...processing: ZOT_33_T_ILETTUR................................*
 DATA:  BEGIN OF STATUS_ZOT_33_T_ILETTUR              .   "state vector
          INCLUDE STRUCTURE VIMSTATUS.
@@ -50,6 +56,7 @@ DATA:  END OF STATUS_ZOT_33_T_P_MAST               .
 CONTROLS: TCTRL_ZOT_33_T_P_MAST
             TYPE TABLEVIEW USING SCREEN '0002'.
 *.........table declarations:.................................*
+TABLES: *ZOT_33_T_ADRES                .
 TABLES: *ZOT_33_T_ILETTUR              .
 TABLES: *ZOT_33_T_P_AILE               .
 TABLES: *ZOT_33_T_P_ATUR               .
@@ -58,6 +65,7 @@ TABLES: *ZOT_33_T_P_ETUR               .
 TABLES: *ZOT_33_T_P_ILTSM              .
 TABLES: *ZOT_33_T_P_ITUR               .
 TABLES: *ZOT_33_T_P_MAST               .
+TABLES: ZOT_33_T_ADRES                 .
 TABLES: ZOT_33_T_ILETTUR               .
 TABLES: ZOT_33_T_P_AILE                .
 TABLES: ZOT_33_T_P_ATUR                .
